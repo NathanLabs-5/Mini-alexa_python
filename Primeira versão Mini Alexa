@@ -1,0 +1,39 @@
+import webbrowser
+from datetime import datetime
+
+while True:
+    print("1-playlist(YT)\n2-Data\n3-Sair\n4-Conversor Dollar em Real\n5-Conversor Real em Dollar")
+
+
+    try:
+        numero = int(input("Digite seu número:"))
+    except ValueError:
+        print("Erro! Digite um número válido!")
+        continue
+
+    if numero == 1:
+        webbrowser.open(
+            "https://youtube.com/playlist?list=PLCCa9PWFPxCNY83ZJyZ4kwHTyECSbHNPU&si=WUwCZLp7pUxFDwBC"
+        )
+
+    elif numero == 2:
+        atualmente = datetime.now()
+        print("Hora atual", atualmente.strftime("%H:%M:%S:"))
+
+    elif numero == 3:
+        print("Saindo do programa!")
+        break
+    elif numero == 4:
+        n1=float(input("Digite seu primeiro valor:"))
+        media=n1/5.10
+        print("Seu valor é: %2.1f"%media)
+
+    elif numero == 5:
+        n2 = float(input("Digite seu primeiro valor:"))
+        valor=n2*5.10
+        print("Seu valor é: %2.1f"valor)
+
+
+
+    else:
+        print("Opção inválida!")
