@@ -1,47 +1,160 @@
-# Mini Alexa - Terminal Project 🤖
+# Mini Alexa - Python Terminal Assistant 🤖
 
-Projeto desenvolvido em Python com foco na consolidação de lógica de programação e organização de código.
+Projeto desenvolvido em Python com foco na evolução prática em lógica de programação, orientação a objetos, integração com banco de dados e organização de aplicações no terminal.
+
+---
 
 ## 🎯 Objetivo
 
-Aplicar conceitos fundamentais da programação estruturada através da evolução contínua do projeto.
+Consolidar conhecimentos em desenvolvimento backend através da criação de uma assistente virtual em terminal com múltiplas funcionalidades e integração com MySQL.
 
 ---
 
 ## 🧠 Conceitos Aplicados
 
-- Estruturas condicionais (if/else)
-- Laços de repetição (while)
-- Validação de dados
-- Modularização com funções
-- Manipulação de datas (datetime)
-- Abertura de links via navegador (webbrowser)
-- Conversão de moedas
-- Verificação de ano bissexto
+### Fundamentos
+
+* Estruturas condicionais (`if/else`)
+* Laços de repetição (`while`)
+* Tratamento de exceções (`try/except`)
+* Validação de dados
+* Modularização com funções
+* Manipulação de datas (`datetime`)
+
+### Programação Orientada a Objetos
+
+* Classes e objetos
+* Métodos
+* Encapsulamento
+* Separação de responsabilidades
+
+### Banco de Dados
+
+* CRUD completo com MySQL
+* Integração usando `mysql-connector`
+* Organização de serviços
+* Persistência de dados
+
+### Segurança e Configuração
+
+* Uso de variáveis de ambiente com `.env`
+* Proteção de credenciais usando `.gitignore`
+* Arquivo `.env.example` para configuração do projeto
+
+### Bibliotecas Utilizadas
+
+* `mysql.connector`
+* `pyttsx3`
+* `pyautogui`
+* `webbrowser`
+* `python-dotenv`
 
 ---
 
-## 📌 Estrutura do Projeto
+## 📌 Funcionalidades
 
-O sistema possui:
+### 🔐 Sistema de autenticação
 
-- Autenticação por senha
-- Menu interativo
-- Área matemática
-- Organização modular com funções separadas
+* Validação de senha forte
+* Verificação de:
+
+  * Letras maiúsculas
+  * Letras minúsculas
+  * Números
+  * Caracteres especiais
+
+### 🎵 Sistema de playlists
+
+* Abertura automática de playlists no navegador
+* Automação com PyAutoGUI
+
+### ⏰ Relógio em tempo real
+
+* Atualização dinâmica no terminal
+
+### 🧮 Área matemática
+
+* Conversor Real ↔ Dólar
+* Conversor Celsius ↔ Fahrenheit
+* Identificador de ano bissexto
+
+### 🗂️ CRUD Alexa
+
+#### Lembretes
+
+* Inserir
+* Atualizar
+* Listar
+* Deletar
+
+#### Datas comemorativas
+
+* Inserir aniversários
+* Atualizar registros
+* Listar registros
+* Deletar registros
+
+---
+
+## 🏗️ Estrutura Atual
+
+O projeto atualmente utiliza:
+
+* Menus interativos
+* Separação por serviços
+* Integração com banco de dados
+* Organização orientada a objetos
+* Variáveis de ambiente
+* Tratamento de erros
 
 ---
 
 ## 🚀 Evolução do Projeto
 
 ### v1
-Versão inicial com estrutura básica e menu funcional.
+
+* Estrutura inicial
+* Menu funcional
+* Primeiros testes de lógica
 
 ### v2
-Refatoração completa com uso de funções.
-Adição da área matemática com:
-- Conversor Real ↔ Dólar
-- Identificador de ano bissexto
+
+* Refatoração com funções
+* Área matemática
+* Conversores
+* Melhor organização do código
+
+### v3
+
+* Integração com MySQL
+* CRUD completo
+* Uso de `.env`
+* Organização orientada a objetos
+* Serviços separados
+* Melhor tratamento de erros
+* Refatoração geral do sistema
+
+---
+
+## ⚙️ Configuração do Projeto
+
+### Instalar dependências
+
+```bash
+pip install mysql-connector-python
+pip install pyttsx3
+pip install pyautogui
+pip install python-dotenv
+```
+
+### Configurar `.env`
+
+```env
+HOST=
+USER=
+PASSWORD=
+DATABASE=
+```
 
 ---
 
